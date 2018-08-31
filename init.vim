@@ -1,3 +1,12 @@
+let $VTE_VERSION="100"
+
+set encoding=utf-8
+set ignorecase
+set number
+
+""set termguicolors
+set background=dark
+
 call plug#begin()
 Plug 'brooth/far.vim'
 Plug 'neomake/neomake'
