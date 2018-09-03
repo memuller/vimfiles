@@ -7,6 +7,14 @@ set number
 ""set termguicolors
 set background=dark
 
+set expandtab
+set autoindent
+set softtabstop=2
+set shiftwidth=2
+set tabstop=2
+
+filetype plugin indent on
+
 call plug#begin()
 Plug 'brooth/far.vim'
 Plug 'neomake/neomake'
@@ -15,13 +23,19 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-surround'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-fugitive'
 
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'w0rp/ale'
+
+""Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'editorconfig/editorconfig-vim'
 
-Plug 'HerringtonDarkholme/yats.vim'
-Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
-
+Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+Plug 'leafgarland/typescript-vim'
+Plug 'junegunn/goyo.vim'
 
 call plug#end()
 
@@ -41,4 +55,5 @@ map ; :FZF<CR>
 
 let g:deoplete#enable_at_startup = 1
 
+let g:javascript_plugin_jsdoc = 1
 
