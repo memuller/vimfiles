@@ -43,13 +43,23 @@ call plug#end()
 
 call neomake#configure#automake('nw', 750)
 
+" NERDTree
 map <C-E> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=1
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.pyc$', 'node_modules']
 
+" Split remaps
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+set splitbelow
+set splitright
+
 set noshowmode
 let g:lightline = { 'colorscheme': 'solarized' }
+
 
 "fzf
 map ; :FZF<CR>
