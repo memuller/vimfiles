@@ -8,6 +8,7 @@ prepare:
 
 link:
 	cd ~ && rm -fr .config/nvim .vimrc .vim
+	mkdir -p ~/.config
 	ln -s ~/Repos/env/vimfiles ~/.config/nvim
 	ln -s ~/Repos/env/vimfiles ~/.vim
 	ln -s ~/Repos/env/vimfiles/init.vim ~/.vimrc

@@ -36,6 +36,7 @@ Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'mattn/emmet-vim'
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'leafgarland/typescript-vim'
+Plug 'posva/vim-vue', { 'for': 'vue' }
 Plug 'junegunn/goyo.vim'
 
 call plug#end()
